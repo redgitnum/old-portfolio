@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Gerard Bandosz - Portfolio</title>
+</head>
+<script defer src="script.js"></script>
+    
+<body>
+    <div class="shadow-box">
+        <div class="hex-container-idle">
+            <div onmouseout="resetStyle(this)" onmouseover="hover(this)" onmousedown="show(this)" id="about" class="hexagon about">
+                <h2>about</h2>
+                <div class="content-box">
+                    <h3>Hi, I'm Gerard, a web developer</h3>
+                    <p>I make websites from scratch, both frontend and backend
+                        are done by me.<br>
+                        Check the projects tab for demos, raw code and
+                        the idea behind each project. </p>
+                    <p>What I use for now:</p>
+                    <div class="skills">
+                        <code>HTML</code>
+                        <code>CSS</code>
+                        <code>JS</code>
+                        <code>Node.js</code>
+                        <code>React</code>
+                        <code>Express</code>
+                        <code>MongoDB</code>
+                        <code>D3.js</code>
+                        <code>Chart.js</code>
+                        <code>Bootstrap</code>
+                        <code>Git</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hex-container-idle">
+            <div onmouseout="resetStyle(this)" onmouseover="hover(this)" onmousedown="show(this)" id="projects" class="hexagon projects">
+                <h2>projects</h2>
+                <div class="content-box">
+                    <div class="projects-box">
+
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="image-search">
+                            <div class="hex-title">image search app</div>
+                            <img class="thumbnail-hex" src="image-search.jpg">
+                        </div>
+
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="currency-converter">
+                            <div class="hex-title">currency converter app</div>
+                            <img class="thumbnail-hex" src="currency-converter.jpg">
+                        </div>
+
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="weather-app">
+                            <div class="hex-title">weather forecast app</div>
+                            <img class="thumbnail-hex" src="weather-app.jpg">
+                        </div>
+                        
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="gym-membership">
+                            <div class="hex-title">gym membership platform</div>
+                            <img class="thumbnail-hex" src="gym-membership.jpg">
+                        </div>
+
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="clinic-control">
+                            <div class="hex-title">clinic control panel</div>
+                            <img class="thumbnail-hex" src="clinic-control-panel.jpg">
+                        </div>
+
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="reddit-reader">
+                            <div class="hex-title">reddit reader</div>
+                            <img class="thumbnail-hex" src="reddit-reader.jpg">
+                        </div>
+
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="to-do-list">
+                            <div class="hex-title">to do list</div>
+                            <img class="thumbnail-hex" src="to-do-list.jpg">
+                        </div>
+
+                        <div onmousedown="showInfo(this)" class="mini-hex" id="codepen">
+                            <div class="hex-title">codepen projects</div>
+                            <img class="thumbnail-hex" src="codepen.jpg">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="info-page" id="image-search-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-title">
+                            image search app
+                        </div>
+                        <div class="project-image">
+                            <img class="thumbnail" src="image-search.jpg">
+                            <img class="thumbnail-full" src="image-search.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>React</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-overview">
+                            Simple image search app using pixabay API, results can be filtered. 
+                            For gallery rendering I used react-masonry-css and react-progressive-loader for lazy loading 
+                            the images, the app is mobile friendly.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://github.com/redgitnum/image-search-app"><img class="icon" src="iconmonstr-github-1.svg"><br>github</a>
+                            </div>
+                            <div class="link">
+                                <a target="_blank" href="http://gbcode.pl/image-search/index.html"><img class="icon" src="iconmonstr-share-8.svg"><br>demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-page" id="currency-converter-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-title">
+                            currency converter app
+                        </div>
+                        <div class="project-image">
+                            <img class="thumbnail" src="currency-converter.jpg">
+                            <img class="thumbnail-full" src="currency-converter.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>Chart.js</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-overview">
+                            Simple currency converter app with a chart with history data(up to a year, don't want to strain the API too much). 
+                            In the future maybe I will expand it with more data, caching and some other functionality. 
+                            The charts are drawn with Chart.js and the data is fetched from exchangeratesapi.io API.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://github.com/redgitnum/currency-converter"><img class="icon" src="iconmonstr-github-1.svg"><br>github</a>
+                            </div>
+                            <div class="link">
+                                <a target="_blank" href="http://gbcode.pl/currency-converter/"><img class="icon" src="iconmonstr-share-8.svg"><br>demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-page" id="weather-app-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-title">
+                            weather forecast app
+                        </div>
+                        <div class="project-image">
+                            <img class="thumbnail" src="weather-app.jpg">
+                            <img class="thumbnail-full" src="weather-app.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>React</code>
+                            <code>Bootstrap</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-overview">
+                            Simple weather forecast app, I could get more detailed with more weather animations but I will leave it at that 
+                            for now. You can check the weather for the next 5 days in 3 hour jumps.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://github.com/redgitnum/weather-app"><img class="icon" src="iconmonstr-github-1.svg"><br>github</a>
+                            </div>
+                            <div class="link">
+                                <a target="_blank" href="http://gbcode.pl/weather-app/"><img class="icon" src="iconmonstr-share-8.svg"><br>demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-page" id="gym-membership-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-image">
+                            <img class="thumbnail" src="gym-membership.jpg">
+                            <img class="thumbnail-full" src="gym-membership.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>React</code>
+                            <code>Bootstrap</code>
+                            <code>Node.js</code>
+                            <code>MongoDB</code>
+                            <code>Express</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-title">
+                            gym membership platform
+                        </div>
+                        <div class="project-overview">
+                            First project with a backend to use CRUD functions on 
+                            a database in MongoDB, used mongoose for model creation and 
+                            data management. App functions are self explanatory but for 
+                            more information you can read the readme file on github.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://github.com/redgitnum/gym-membership"><img class="icon" src="iconmonstr-github-1.svg"><br>github</a>
+                            </div>
+                            <div class="link">
+                                <a target="_blank" href="http://gbcode.pl/gym-membership/"><img class="icon" src="iconmonstr-share-8.svg"><br>demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-page" id="clinic-control-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-title">
+                            clinic control panel
+                        </div>
+                        <div class="project-image">
+                            <img class="thumbnail" src="clinic-control-panel.jpg">
+                            <img class="thumbnail-full" src="clinic-control-panel.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>React</code>
+                            <code>Node.js</code>
+                            <code>MongoDB</code>
+                            <code>Express</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-overview">
+                            Similar to the last project, just with more depth. Not used 
+                            bootstrap with this one for more practice with css. App to be 
+                            used by a clinic personnel to appoint visit(via phonecall) or 
+                            by a doctor to add visit(walk-in patient without appointment).
+                            Kept adding functionality as I worked on the project so some things 
+                            may look messy. More info in readme file on github.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://github.com/redgitnum/clinic-control-panel"><img class="icon" src="iconmonstr-github-1.svg"><br>github</a>
+                            </div>
+                            <div class="link">
+                                <a target="_blank" href="http://gbcode.pl/clinic-control/"><img class="icon" src="iconmonstr-share-8.svg"><br>demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-page" id="reddit-reader-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-title">
+                            reddit reader
+                        </div>
+                        <div class="project-image">
+                            <img class="thumbnail" src="reddit-reader.jpg">
+                            <img class="thumbnail-full" src="reddit-reader.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>React</code>
+                            <code>Node.js</code>
+                            <code>MongoDB</code>
+                            <code>Express</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-overview">
+                            Had an idea to use the reddit API to make a little 
+                            reader without any special functions or bloat when viewing. 
+                            The data from the api was not very easy to handle as there are 
+                            dozens of types of posts, flairs, x-posts(repost with a nested post), 
+                            managing different filetypes (some are processed by reddit itself) so 
+                            the app does not work exactly the way I wanted but I know it is a rabbit hole 
+                            so I will move on for now and maybe return in the future. More info in readme 
+                            on github like always.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://github.com/redgitnum/reddit-reader"><img class="icon" src="iconmonstr-github-1.svg"><br>github</a>
+                            </div>
+                            <div class="link">
+                                <a target="_blank" href="http://gbcode.pl/reddit-reader/"><img class="icon" src="iconmonstr-share-8.svg"><br>demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-page" id="to-do-list-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-image">
+                            <img class="thumbnail" src="to-do-list.jpg">
+                            <img class="thumbnail-full" src="to-do-list.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>React</code>
+                            <code>Bootstrap</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-title">
+                            to do list
+                        </div>
+                        <div class="project-overview">
+                            One of the first things I did in react, 
+                            not very complex but made me realize how react works 
+                            and how much cleaner (at the time of coding) the code looks compared to plain JS 
+                            coding.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://github.com/redgitnum/to-do-list"><img class="icon" src="iconmonstr-github-1.svg"><br>github</a>
+                            </div>
+                            <div class="link">
+                                <a target="_blank" href="http://gbcode.pl/to-do-list/"><img class="icon" src="iconmonstr-share-8.svg"><br>demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-page" id="codepen-info">
+                    <div onmousedown="closeInfo(this)" class="shadow-behind"></div>
+                    <img onmousedown="closeInfo(this)" class="exit" src='iconmonstr-x-mark-1.svg'>
+                    <div class="left-side">
+                        <div class="project-title">
+                            codepen projects
+                        </div>
+                        <div class="project-image">
+                            <img class="thumbnail" src="codepen.jpg">
+                            <img class="thumbnail-full" src="codepen.jpg">
+                        </div>
+                        <div class="project-code">
+                            <code>HTML</code>
+                            <code>CSS</code>
+                            <code>JS</code>
+                            <code>D3.js</code>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="project-overview">
+                            Various projects made in codepen. All of them were for fcc projects
+                            to test different skills. You can see the D3js library in action in 
+                            most of the projects, great for data visualization.
+                        </div>
+                        <div class="project-links">
+                            <div class="link">
+                                <a target="_blank" href="https://codepen.io/collection/XJOdvG"><img class="icon" src="iconfinder_codepen_2561411.svg"><br>codepen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="hex-container-idle">
+            <div onmouseout="resetStyle(this)" onmouseover="hover(this)" onmousedown="show(this)" id="contact" class="hexagon contact">
+                <h2>contact</h2>
+                <div class="content-box">
+                    <a target="_blank" href="https://github.com/redgitnum"><img class="contact-icon" src="iconmonstr-github-1.svg"><br>https://github.com/redgitnum</a><br>
+                    <a href="mailto:gerard.bandosz@wp.pl"><img class="contact-icon" src="iconfinder_aiga_mail_134146.svg"><br>gerard.bandosz@wp.pl</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>     
+</html>
